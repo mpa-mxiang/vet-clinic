@@ -6,6 +6,10 @@ WHERE name LIKE '%mon';
 SELECT name FROM animals
 WHERE date_of_birth >= '2016/01/01' and date_of_birth <= '2019/12/31';
 
+-- List the name of all animals that are neutered and have less than 3 escape attempts.
+SELECT name FROM animals
+  WHERE neutered=TRUE AND escape_attempts<3;
+
 SELECT date_of_birth FROM animals
 WHERE name = 'Agumon' OR name = 'Pikachu';
 
