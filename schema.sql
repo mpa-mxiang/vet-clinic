@@ -23,3 +23,12 @@ CREATE TABLE owners (
     Age int,
     PRIMARY KEY (ID)
 );
+
+-- Create a table named species with the following columns:
+-- id: integer (set it as autoincremented PRIMARY KEY)
+-- name: string
+CREATE TABLE species (
+    id int NOT NULL,
+    name varchar(255),
+    PRIMARY KEY (ID)
+);
