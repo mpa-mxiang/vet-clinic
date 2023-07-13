@@ -47,3 +47,21 @@ ADD FOREIGN KEY (species_id) REFERENCES species(id);
 ALTER TABLE animals
 ADD owner_id int,
 ADD FOREIGN KEY (owner_id) REFERENCES owners(id);
+------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE vets (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR,
+  age INTEGER,
+  date_of_graduation DATE
+);
+
+CREATE TABLE specializations (
+  vet_id INTEGER REFERENCES vets(id),
+  specialty VARCHAR
+);
+
+CREATE TABLE visits (
+  animal VARCHAR,
+  vet_id INTEGER REFERENCES vets(id),
+  visit_date DATE
+);
