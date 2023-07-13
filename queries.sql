@@ -103,25 +103,3 @@ WHERE neutered=FALSE
 AND date_of_birth >= '1990/01/01' and date_of_birth <= '2000/12/31';
 
 
-
-------------------------------------------------------------------------------------------------------------------------
--- Create a table named owners with the following columns:
--- id: integer (set it as autoincremented PRIMARY KEY)
--- full_name: string
--- age: integer
-CREATE TABLE owners (
-    id int NOT NULL,
-    full_name varchar(255),
-    Age int,
-    PRIMARY KEY (ID)
-);
-
--- Create a table named species with the following columns:
--- id: integer (set it as autoincremented PRIMARY KEY)
--- name: string
-CREATE TABLE species (
-    id int NOT NULL,
-    name varchar(255),
-    PRIMARY KEY (ID)
-);
-
