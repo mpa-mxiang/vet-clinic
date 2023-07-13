@@ -54,20 +54,20 @@ Melody Pond 77 years old.
 Dean Winchester 14 years old.
 Jodie Whittaker 38 years old.
 */
-INSERT INTO owners (full_name, age)
-VALUES ('Sam Smith', 34);
+INSERT INTO owners (id, full_name, age)
+VALUES (1, 'Sam Smith', 34);
 
-INSERT INTO owners (full_name, age)
-VALUES ('Jennifer Orwell', 19);
+INSERT INTO owners (id, full_name, age)
+VALUES (2, 'Jennifer Orwell', 19);
 
-INSERT INTO owners (full_name, age)
-VALUES ('Bob', 45);
+INSERT INTO owners (id, full_name, age)
+VALUES (3, 'Bob', 45);
 
-INSERT INTO owners (full_name, age)
-VALUES ('Melody Pond', 77);
+INSERT INTO owners (id, full_name, age)
+VALUES (4, 'Melody Pond', 77);
 
-INSERT INTO owners (full_name, age)
-VALUES ('Dean Winchester', 14);
+INSERT INTO owners (id, full_name, age)
+VALUES (5, 'Dean Winchester', 14);
 
-INSERT INTO owners (full_name, age)
-VALUES ('Jodie Whittaker', 38);
+INSERT INTO owners (id, full_name, age)
+VALUES (6, 'Jodie Whittaker', 38);
