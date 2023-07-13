@@ -43,3 +43,31 @@ VALUES ('Blossom', TO_DATE('13/10/1998', 'DD/MM/YYYY'), 3, TRUE, 17);
 
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES ('Ditto', TO_DATE('14/05/2022', 'DD/MM/YYYY'), 4, TRUE, 22);
+
+---------------------------------------------------------------------------------------------------------------------------------------
+/*
+Insert the following data into the owners table:
+Sam Smith 34 years old.
+Jennifer Orwell 19 years old.
+Bob 45 years old.
+Melody Pond 77 years old.
+Dean Winchester 14 years old.
+Jodie Whittaker 38 years old.
+*/
+INSERT INTO owners (full_name, age)
+VALUES ('Sam Smith', 34);
+
+INSERT INTO owners (full_name, age)
+VALUES ('Jennifer Orwell', 19);
+
+INSERT INTO owners (full_name, age)
+VALUES ('Bob', 45);
+
+INSERT INTO owners (full_name, age)
+VALUES ('Melody Pond', 77);
+
+INSERT INTO owners (full_name, age)
+VALUES ('Dean Winchester', 14);
+
+INSERT INTO owners (full_name, age)
+VALUES ('Jodie Whittaker', 38);
