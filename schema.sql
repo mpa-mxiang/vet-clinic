@@ -13,6 +13,8 @@ CREATE TABLE animals (
 ALTER TABLE animals
 ADD species varchar(255);
 
+
+------------------------------------------------------------------------------------------------------------------------
 -- Create a table named owners with the following columns:
 -- id: integer (set it as autoincremented PRIMARY KEY)
 -- full_name: string
@@ -32,3 +34,16 @@ CREATE TABLE species (
     name varchar(255),
     PRIMARY KEY (ID)
 );
+
+------------------------------------------------------------
+-- Remove column species
+ALTER TABLE animals
+DROP COLUMN species;
+-- Add column species_id which is a foreign key referencing species table
+ALTER TABLE animals
+ADD species_id int,
+ADD FOREIGN KEY (species_id) REFERENCES species(id);
+-- Add column owner_id which is a foreign key referencing the owners table
+ALTER TABLE animals
+ADD owner_id int,
+ADD FOREIGN KEY (owner_id) REFERENCES owners(id);
