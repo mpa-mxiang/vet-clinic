@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-# vet-clinic-db project project (Module 4)
+# vet-clinic-db project
 
   <h3><b>vet-clinic project</b></h3>
 
@@ -28,7 +28,7 @@
 **Vet Clinic** is a project to create data structure for a vet clinic using a relational database. It implements PostgreSQL and contains all the data about animals. The complete database contains tables with data about:
     [] animals
     [] animals' owners
-    [] clinic employees
+    [] Clinic employees
     [] visits
 
 
@@ -46,7 +46,7 @@
 ### Key Features <a name="key-features"></a>
 
 - Create a database to store animals' information
-- Insert some data into table, and query it
+- Insert some data into the table, and query it
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +84,7 @@ CREATE DATABASE
 3. Connect to your database vet_clinic. Inside your current session do:
 ```
 postgres=# \c vet_clinic
-You are now connected to database "vet_clinic" as user "postgres".
+You are now connected to the database "vet_clinic" as user "postgres".
 vet_clinic=#
 ```
 
@@ -110,8 +110,8 @@ That's it! Congratulations, you have created your database and connected to it. 
 ## 🔭 Future Features <a name="future-features"></a>
 
 - Insert new data
-- Update existence data
-- Delete existence data
+- Update existing data
+- Delete existing data
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,7 +130,7 @@ Give a start if you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- I would like to thank Enmanuel Bayen who helps me a lot for setup.
+- I would like to thank Enmanuel Bayen who helped me a lot with setup.
 
 ## 📝 License <a name="license"></a>
 
