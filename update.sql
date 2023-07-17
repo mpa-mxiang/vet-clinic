@@ -9,4 +9,14 @@ INSERT INTO visits (animal, vet_id, visit_date) SELECT * FROM (SELECT id FROM an
 INSERT INTO owners (full_name, email)
 SELECT 'Owner ' || generate_series(1, 2500000), 'owner_' || generate_series(1, 2500000) || '@mail.com'
 ON CONFLICT DO NOTHING;
+
+explain analyze SELECT COUNT(*) FROM visits where vet_id = 4
 --------------------------------------------------------------------------------------------------------------------------------------------
+SELECT COUNT(*) FROM visits where vet_id = 4;
+SELECT * FROM visits where vet_id = 2;
+SELECT * FROM owners where email = 'owner_18327@mail.com';
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+INDEXING SOL:
+CREATE INDEX visits_vet_id_idx ON visits (vet_id);
+CREATE INDEX owners_email_idx ON owners (email);
