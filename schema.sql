@@ -65,3 +65,19 @@ CREATE TABLE visits (
   vet_id INTEGER REFERENCES vets(id),
   visit_date DATE
 );
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+
+explain analyze SELECT COUNT(*) FROM visits where vet_id = 4
+--------------------------------------------------------------------------------------------------------------------------------------------
+SELECT COUNT(*) FROM visits where vet_id = 4;
+SELECT * FROM visits where vet_id = 2;
+SELECT * FROM owners where email = 'owner_18327@mail.com';
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+INDEXING SOL:
+CREATE INDEX visits_vet_id_idx ON visits (vet_id);
+CREATE INDEX owners_email_idx ON owners (email);

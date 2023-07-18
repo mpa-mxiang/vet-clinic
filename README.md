@@ -134,8 +134,6 @@ Give a start if you like this project!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/MMGGYY66/vets_clinic/blob/animals/MIT.md).
-
- [MIT license](./MIT.md) 
+This project is [MIT](https://github.com/mpa-mxiang/vet-clinic/blob/table/LICENSE).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
