@@ -1,3 +1,19 @@
+CREATE TABLE treatments (
+    id INT,
+    type VARCHAR(30),
+    name VARCHAR(30),
+    PRIMARY KEY(id),
+);
+
+CREATE TABLE medical_histories (
+    id INT,
+    admitted_at TIMESTAMP,
+    patient_id INT,
+    status VARCHAR(30),
+    PRIMARY KEY(id),
+    FOREIGN KEY(patient_id) REFERENCES patients(id)
+);
+
 CREATE TABLE patients(
   id INT GENERATED ALWAYS AS IDENTITY,
   name VARCHAR(20),
@@ -13,3 +29,4 @@ CREATE TABLE invoices(
   medical_history_id INT
   PRIMARY KEY(id)
 );
+
