@@ -30,3 +30,16 @@ CREATE TABLE invoices(
   PRIMARY KEY(id)
 );
 
+CREATE TABLE invoice_items (
+  id INT,
+  unite_price DECIMAL,
+  quantity INT,
+  total_price DECIMAL,
+  invoice_id INT,
+  treatment_id INT,
+  PRIMARY KEY(id),
+  FOREIGN KEY(invoice_id) REFERENCES invoices(id),
+  FOREIGN KEY(treatment_id) REFERENCES treatments(id),
+);
+
+
