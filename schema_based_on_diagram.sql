@@ -1,12 +1,12 @@
 CREATE TABLE treatments (
-    id INT,
+    id INT GENERATED ALWAYS AS IDENTITY,
     type VARCHAR(30),
     name VARCHAR(30),
     PRIMARY KEY(id),
 );
 
 CREATE TABLE medical_histories (
-    id INT,
+    id INT GENERATED ALWAYS AS IDENTITY,
     admitted_at TIMESTAMP,
     patient_id INT,
     status VARCHAR(30),
