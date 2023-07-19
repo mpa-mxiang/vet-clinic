@@ -1,3 +1,8 @@
+ CREATE TABLE medical_histories_has_treatments (
+    medical_history_id INT REFERENCES medical_histories(id),
+    treatment_id INT REFERENCES treatments(id),
+    );
+
 CREATE TABLE treatments (
     id INT GENERATED ALWAYS AS IDENTITY,
     type VARCHAR(30),
